@@ -47,4 +47,36 @@ I used python3, and pip3, to maintain the consistency, you should always command
   which python3.7
   #/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
   ```
+### 04 ERROR: Module not found
+```
+from layers.graph import Graph
+```
+cannot find the module layers
+steps:
+- list the current packages installed in python, find whether layers package exists
+  ```
+  pip3 list
+  ```
+- locate the layers package
+```
+pip show layers
+# provide details about the installation path
+```
+this is the output
+```
+pip3 show layers
+Name: layers
+Version: 0.1.5
+Summary: Layered source layouts for software development projects
+Home-page: https://github.com/ribozz/layers
+Author: Alex Rudakov
+Author-email: ribozz+layers@gmail.com
+License: 
+Location: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages
+Requires: bashutils, PyYaml
+Required-by:
+```
+- Module Structure: Verify the structure of the 'layers' module to ensure that it contains a submodule named 'graph'. If the module structure is different, you'll need to adjust your import statement accordingly.
 
+```
+```
