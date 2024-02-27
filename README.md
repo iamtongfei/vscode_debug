@@ -78,5 +78,7 @@ Required-by:
 ```
 - Module Structure: Verify the structure of the 'layers' module to ensure that it contains a submodule named 'graph'. If the module structure is different, you'll need to adjust your import statement accordingly.
 
+###05 install torch-scatter == 1.4.0 (but the current new version 2.2.0) how you download the previouse version
 ```
+pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.4.0+cu101.html
 ```
