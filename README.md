@@ -80,6 +80,8 @@ Required-by:
 
 ### 05 install torch-scatter == 1.4.0 (but the current new version 2.2.0) how you download the previouse version
 <img width="762" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/fc394fe4-494c-499a-bb58-96a1cf412e53">
+
+
 ```
 pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.4.0+cu101.html
 ```
