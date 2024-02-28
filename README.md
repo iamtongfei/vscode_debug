@@ -145,3 +145,13 @@ if you have the datastrcture:
 
 <img width="668" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/efc74043-597e-4a24-9b2a-a6ebd02f4caf">
 
+The other error I have is that, in terminal, if I run 
+```
+python3 test.py
+```
+all modules are not found, but if I just click "run" button, it works. Don't know why.
+
+### 08 AssertionError: Torch not compiled with CUDA enabled
+```
+AssertionError: Torch not compiled with CUDA enabled
+```
