@@ -128,9 +128,7 @@ here is the code that request the module
 from prediction.model.base.interface import Interface
 ```
 debug process:
-1. </br>
-Check Relative Path:</br>
-Ensure that the relative path specified in the import statement matches the directory structure of your project. In your case, it's trying to import DataLoader from prediction/model/base/dataloader.py. Verify that this file exists at the specified location relative to dataloader.py.
-2. </br>
-Verify Module Existence:</br>
+1. Check Relative Path:</br>
+Ensure that the relative path specified in the import statement matches the directory structure of your project. In your case, it's trying to import DataLoader from prediction/model/base/dataloader.py. Verify that this file exists at the specified location relative to dataloader.py.</br>
+2. Verify Module Existence:</br>
 Double-check that there is indeed a module named prediction in your project, and it contains the necessary files, including __init__.py if it's intended to be a package.
