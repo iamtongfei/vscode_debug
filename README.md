@@ -108,3 +108,11 @@ torchvision          0.11.3
 ```
 ### 06 Exception has occurred: TypeError scatter_max() got an unexpected keyword argument 'fill_value'
 <img width="861" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/76b0fb14-7b7c-483e-9870-25130d786b23">
+
+example code for 1.8.0
+```
+pip install https://pytorch-geometric.com/whl/torch-1.8.0+cpu/torch_scatter-2.0.6-cp36-cp36m-win_amd64.whl
+```
+```
+pip3 install https://data.pyg.org/whl/torch-1.4.0%2Bcpu/torch_cluster-1.5.2-cp36-cp36m-macosx_10_9_x86_64.whl
+```
