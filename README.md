@@ -116,3 +116,21 @@ pip install https://pytorch-geometric.com/whl/torch-1.8.0+cpu/torch_scatter-2.0.
 ```
 pip3 install https://data.pyg.org/whl/torch-1.4.0%2Bcpu/torch_cluster-1.5.2-cp36-cp36m-macosx_10_9_x86_64.whl
 ```
+### 07 Module not found (but it is exists in the dir)
+error:
+```
+  File "/Users/tongfeiguo/Downloads/AdvTrajectoryPrediction-master/prediction/model/GRIP/dataloader.py", line 8, in <module>
+    from prediction.model.base.dataloader import DataLoader
+ModuleNotFoundError: No module named 'prediction'
+```
+here is the code that request the module
+```
+from prediction.model.base.interface import Interface
+```
+debug process:
+1. </br>
+Check Relative Path:</br>
+Ensure that the relative path specified in the import statement matches the directory structure of your project. In your case, it's trying to import DataLoader from prediction/model/base/dataloader.py. Verify that this file exists at the specified location relative to dataloader.py.
+2. </br>
+Verify Module Existence:</br>
+Double-check that there is indeed a module named prediction in your project, and it contains the necessary files, including __init__.py if it's intended to be a package.
