@@ -85,3 +85,28 @@ Required-by:
 ```
 pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.4.0+cu101.html
 ```
+however when I type this command:
+```
+pip3 install torch-scatter==1.4.0 -f https://data.pyg.org/whl/torch-1.4.0+cu101.html
+```
+there is an error
+```
+      error: [Errno 2] No such file or directory: '/usr/local/cuda/bin/nvcc': '/usr/local/cuda/bin/nvcc'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for torch-scatter
+  Running setup.py clean for torch-scatter
+Failed to build torch-scatter
+ERROR: Could not build wheels for torch-scatter, which is required to install pyproject.toml-based projects
+```
+-- check pytorch and all version
+```
+pip3 list | grep torch
+```
+give the results
+```
+torch                1.10.2
+torch-scatter        2.1.1
+torchvision          0.11.3
+```
