@@ -131,4 +131,16 @@ debug process:
 1. Check Relative Path:</br>
 Ensure that the relative path specified in the import statement matches the directory structure of your project. In your case, it's trying to import DataLoader from prediction/model/base/dataloader.py. Verify that this file exists at the specified location relative to dataloader.py.</br>
 2. Verify Module Existence:</br>
-Double-check that there is indeed a module named prediction in your project, and it contains the necessary files, including __init__.py if it's intended to be a package.
+Double-check that there is indeed a module named prediction in your project, and it contains the necessary files, including __init__.py if it's intended to be a package. </br>
+#### 7.1 what is __init__.py do?
+If __init__.py is not empty, then whatever is in __init__.py is what will be available when you import the package (and things not imported into __init__.py won't be available at all).</br>
+src: https://stackoverflow.com/questions/4142151/how-to-import-the-class-within-the-same-directory-or-sub-directory
+#### python3 import module in the same dir
+in order to import classes from files within the same directory, you would now write in Python 3:
+```
+from .user import User
+from .dir import Dir
+```
+if you have the datastrcture:
+<img width="668" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/efc74043-597e-4a24-9b2a-a6ebd02f4caf">
+
