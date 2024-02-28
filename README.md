@@ -81,10 +81,6 @@ Required-by:
 ### 05 install torch-scatter == 1.4.0 (but the current new version 2.2.0) how you download the previouse version
 <img width="762" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/fc394fe4-494c-499a-bb58-96a1cf412e53">
 
-
-```
-pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.4.0+cu101.html
-```
 however when I type this command:
 ```
 pip3 install torch-scatter==1.4.0 -f https://data.pyg.org/whl/torch-1.4.0+cu101.html
@@ -110,3 +106,5 @@ torch                1.10.2
 torch-scatter        2.1.1
 torchvision          0.11.3
 ```
+### 06 Exception has occurred: TypeError scatter_max() got an unexpected keyword argument 'fill_value'
+<img width="861" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/76b0fb14-7b7c-483e-9870-25130d786b23">
