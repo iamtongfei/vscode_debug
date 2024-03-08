@@ -155,3 +155,9 @@ all modules are not found, but if I just click "run" button, it works. Don't kno
 ```
 AssertionError: Torch not compiled with CUDA enabled
 ```
+Solut:
+<img width="862" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/ffd78592-e8c9-4663-80a9-fa55af974159">
+
+```
+conda install -c pytorch torchvision cudatoolkit=10.1 pytorch
+```
