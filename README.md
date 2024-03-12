@@ -164,6 +164,7 @@ Solut:
 ```
 conda install -c pytorch torchvision cudatoolkit=10.1 pytorch
 ```
+Link: https://github.com/pytorch/pytorch#from-source | CUDA Version
 
 ### test.py (file not found error with model)
 FQA model -- config file ??
@@ -171,4 +172,6 @@ FQA model -- config file ??
 
 GRIP++ model -- 'data/grip_apolloscape/model/original/best_model.pt'
 <img width="898" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/df46b921-be01-4d2c-9c0b-b4f7f4510680">
+
+
 
