@@ -187,3 +187,7 @@ zip and unzip (has video)
 .step02 pip package download
 .step03 pip 3.7 util download
 .step04 check version
+
+### Virtual ENV (python)
+Link: https://docs.python.org/3/tutorial/venv.html
+
