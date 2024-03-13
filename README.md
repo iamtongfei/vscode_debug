@@ -181,3 +181,9 @@ GRIP++ model -- 'data/grip_apolloscape/model/original/best_model.pt'
 Link: https://www.geeksforgeeks.org/how-to-upload-folders-to-google-colab/
 zip and unzip (has video)
 
+### Python downgrade from 3.11 --> 3.7 (pip not found)
+<img width="735" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/6ae6a363-74ef-496f-a272-14fdff64637d">
+.step01 python 3.7 download 
+.step02 pip package download
+.step03 pip 3.7 util download
+.step04 check version
