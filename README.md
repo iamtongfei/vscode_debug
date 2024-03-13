@@ -167,6 +167,8 @@ conda install -c pytorch torchvision cudatoolkit=10.1 pytorch
 Link: https://github.com/pytorch/pytorch#from-source | CUDA Version
 If you want to compile with CUDA support, select a supported version of CUDA from our support matrix ([Link]([url](https://pytorch.org/get-started/locally/))), then install the following:
 
+<img width="890" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/531656a7-4dfe-4d38-a571-ed3fa0018f26">
+
 
 ### test.py (file not found error with model)
 FQA model -- config file ??
