@@ -198,3 +198,5 @@ Link: https://docs.python.org/3/tutorial/venv.html
 .04 use vscode 'git clone' methods to clone the git repo to local 
 .05 python version for env
 
+### 14 google colab | Converting a Machine Learning Github Repo into a Colab Notebook
+Link: https://www.youtube.com/watch?v=yRbvqCdfHF8
