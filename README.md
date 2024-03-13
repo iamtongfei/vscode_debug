@@ -177,5 +177,7 @@ FQA model -- config file ??
 GRIP++ model -- 'data/grip_apolloscape/model/original/best_model.pt'
 <img width="898" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/df46b921-be01-4d2c-9c0b-b4f7f4510680">
 
-
+### Google Colab | upload local folder
+Link: https://www.geeksforgeeks.org/how-to-upload-folders-to-google-colab/
+zip and unzip (has video)
 
