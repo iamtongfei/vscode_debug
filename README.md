@@ -192,4 +192,9 @@ zip and unzip (has video)
 Link: https://docs.python.org/3/tutorial/venv.html
 
 ### 13 setup new vscode (windows)
-.01
+.01 download vscode online
+.02 sign in github
+.03 download Git online (then enable git init and git clone)
+.04 use vscode 'git clone' methods to clone the git repo to local 
+.05 python version for env
+
