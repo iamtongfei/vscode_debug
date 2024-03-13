@@ -170,24 +170,26 @@ If you want to compile with CUDA support, select a supported version of CUDA fro
 <img width="890" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/531656a7-4dfe-4d38-a571-ed3fa0018f26">
 
 
-### test.py (file not found error with model)
+### 09 test.py (file not found error with model)
 FQA model -- config file ??
 <img width="1005" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/610fdd9f-20b0-4cca-b58d-9eff9d0c16ff">
 
 GRIP++ model -- 'data/grip_apolloscape/model/original/best_model.pt'
 <img width="898" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/df46b921-be01-4d2c-9c0b-b4f7f4510680">
 
-### Google Colab | upload local folder
+### 10 Google Colab | upload local folder
 Link: https://www.geeksforgeeks.org/how-to-upload-folders-to-google-colab/
 zip and unzip (has video)
 
-### Python downgrade from 3.11 --> 3.7 (pip not found)
+### 11 Python downgrade from 3.11 --> 3.7 (pip not found)
 <img width="735" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/6ae6a363-74ef-496f-a272-14fdff64637d">
 .step01 python 3.7 download 
 .step02 pip package download
 .step03 pip 3.7 util download
 .step04 check version
 
-### Virtual ENV (python)
+### 12 Virtual ENV (python)
 Link: https://docs.python.org/3/tutorial/venv.html
 
+### 13 setup new vscode (windows)
+.01
