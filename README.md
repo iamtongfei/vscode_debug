@@ -200,3 +200,10 @@ Link: https://docs.python.org/3/tutorial/venv.html
 
 ### 14 google colab | Converting a Machine Learning Github Repo into a Colab Notebook
 Link: https://www.youtube.com/watch?v=yRbvqCdfHF8
+
+### 15 opencv package | AttributeError: module 'cv2.dnn' has no attribute 'DictValue'
+Link: https://github.com/facebookresearch/nougat/issues/40
+Solution:
+
+<img width="472" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/71f50861-48d6-4359-a23b-ee11295f2c69">
+
