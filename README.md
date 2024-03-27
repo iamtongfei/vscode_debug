@@ -209,3 +209,8 @@ Solution:
 
 ### 16 running on a CPU-only machine, please use torch.load
 Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+Here is the code, and how I solve it:
+<img width="1073" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/2422c12e-2fb8-41e5-b43e-f4d38ddcf723">
+
+More helper links: https://stackoverflow.com/questions/75194415/please-use-torch-load-with-map-location-torch-devicecpu-to-map-your-storages
+
