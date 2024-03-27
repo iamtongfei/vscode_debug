@@ -214,3 +214,7 @@ Here is the code, and how I solve it:
 
 More helper links: https://stackoverflow.com/questions/75194415/please-use-torch-load-with-map-location-torch-devicecpu-to-map-your-storages
 
+less relevent but can find the logic to understand: https://stackoverflow.com/questions/56369030/runtimeerror-attempting-to-deserialize-object-on-a-cuda-device
+
+
+
