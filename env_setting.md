@@ -10,6 +10,6 @@ Mac M1 Chip
 
 for ncl:
 I do the following command: conda create -n ncl_stable -c conda-forge ncl   
-# To activate this environment, use                                                         
+- To activate this environment, use                                                         
 $ conda activate ncl_stable                                                                 
-# To deactivate an active environment, use                                                  $ conda deactivate 
+- To deactivate an active environment, use                                                  $ conda deactivate 
