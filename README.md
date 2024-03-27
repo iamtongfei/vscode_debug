@@ -207,3 +207,5 @@ Solution:
 
 <img width="472" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/71f50861-48d6-4359-a23b-ee11295f2c69">
 
+### 16 running on a CPU-only machine, please use torch.load
+Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
