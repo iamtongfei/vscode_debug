@@ -233,4 +233,26 @@ solution:
 Link: 
 https://stackoverflow.com/questions/1841565/valueerror-invalid-literal-for-int-with-base-10
 
+### 19 dismatch:
+`
+2024-03-27 15:00:02,859 - root - WARNING - Log 1534157110 44751
+Traceback (most recent call last):
+  File "test.py", line 180, in <module>
+    main()
+  File "test.py", line 173, in main
+    normal(dataset_name=args.dataset, model_name=args.model, mode=args.mode, augment=args.augment, smooth=args.smooth, overwrite=args.overwrite)
+  File "test.py", line 122, in normal
+    normal_test(api, "data/dataset/{}/multi_frame/raw".format(dataset_name, mode), 
+  File "/Users/feli/Downloads/AdvTrajectoryPrediction-master/test/test_utils.py", line 162, in normal_test
+    input_data = load_data(os.path.join(data_dir, "{}.json".format(name)))
+  File "/Users/feli/Downloads/AdvTrajectoryPrediction-master/test/../prediction/dataset/utils.py", line 37, in load_data
+    with open(file_path, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/dataset/apolloscape/multi_frame/raw/1534157110.json'
+`
+in this folder we have:
+<img width="264" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/0f00c5fe-0412-4a41-b0e5-4c6271bcd620">
+
+In test.py here is the place for access the samples
+<img width="793" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/7ab844f0-cde6-4479-8461-fa784c3e4b9d">
+
 
