@@ -216,5 +216,12 @@ More helper links: https://stackoverflow.com/questions/75194415/please-use-torch
 
 less relevent but can find the logic to understand: https://stackoverflow.com/questions/56369030/runtimeerror-attempting-to-deserialize-object-on-a-cuda-device
 
+### 17 FileNotFoundError: [Errno 2] No such file or directory
+`[Errno 2] No such file or directory: 'data/dataset/apolloscape/multi_frame/samples.txt'`
+Link: https://stackoverflow.com/questions/22282760/filenotfounderror-errno-2-no-such-file-or-directory
+<img width="593" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/c8aaac91-273c-4b8e-972d-22f5387a2246">
+
+### 18 
+
 
 
