@@ -255,4 +255,7 @@ in this folder we have:
 In test.py here is the place for access the samples
 <img width="793" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/7ab844f0-cde6-4479-8461-fa784c3e4b9d">
 
+### 20 name and obj_id not fund
+<img width="1057" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/52d1ca7f-a267-42ba-afeb-0672da7aab49">
+
 
