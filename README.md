@@ -257,10 +257,9 @@ In test.py here is the place for access the samples
 
 ### 20 name and obj_id not fund
 err msg:
+
 <img width="926" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/8bb281b3-fdaa-4652-97b2-8e2cc9ab283f">
-<img width="267" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/357db032-65e0-4022-9fdf-5647d54219aa">
 
-
-<img width="1057" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/52d1ca7f-a267-42ba-afeb-0672da7aab49">
+<img width="1368" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/49fcec2b-4a78-438a-aab0-99f8bb9bab0a">
 
 
