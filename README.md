@@ -262,4 +262,9 @@ err msg:
 
 <img width="1368" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/49fcec2b-4a78-438a-aab0-99f8bb9bab0a">
 
+### 20 pip install requirements.txt
+error
+<img width="870" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/dc947d06-69f4-4485-b622-f1520ef14ae9">
+
+
 
