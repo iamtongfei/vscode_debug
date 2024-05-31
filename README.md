@@ -297,6 +297,13 @@ observe_traces[_obj_id] = torch.from_numpy(input_data["objects"][str(_obj_id)]["
 
 <img width="1425" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/fdbff806-875b-4d50-b1d0-da5b881062a4">
 
+modify after:
+
+<img width="1005" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/52efe204-ac7f-44bf-89f6-19266222c31a">
+
+
+
+
 
 
 
