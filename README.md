@@ -287,6 +287,10 @@ https://stackoverflow.com/questions/63582590/why-do-we-call-detach-before-callin
 
 <img width="996" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/1dfb8c27-76e9-4267-923a-05ee34f9768b">
 
+As mentioned before, np.ndarray object does not have this extra "computational graph" layer and therefore, when converting a torch.tensor to np.ndarray you must explicitly remove the computational graph of the tensor using the detach() command.
+
+所以, 这里方程是为了 convert to numpy, how to use mps device? 
+
 
 
 
