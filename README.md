@@ -264,7 +264,15 @@ err msg:
 
 ### 20 pip install requirements.txt
 error
+
 <img width="870" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/dc947d06-69f4-4485-b622-f1520ef14ae9">
+
+### 21 TypeError: Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead.
+link can find article here:
+https://github.com/facebookresearch/segment-anything/issues/94
+
+<img width="1008" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/e46b235f-ae43-487b-9a2d-ab06a826c67d">
+
 
 
 
