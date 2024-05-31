@@ -281,6 +281,10 @@ TypeError: can't convert mps:0 device type tensor to numpy. Use Tensor.cpu() to 
 
 底层逻辑是什么呢????
 首先明白这几串.func()的含义, 我们底层逻辑是要让他支持'mps‘ 而不是cpu 所以猜测可能是固定搭配
+link found the article here:
+https://stackoverflow.com/questions/63582590/why-do-we-call-detach-before-calling-numpy-on-a-pytorch-tensor
+
+
 <img width="996" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/1dfb8c27-76e9-4267-923a-05ee34f9768b">
 
 
