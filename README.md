@@ -291,6 +291,13 @@ As mentioned before, np.ndarray object does not have this extra "computational g
 
 所以, 这里方程是为了 convert to numpy, how to use mps device? 
 
+### 23 TypeError: Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead.
+Here is my code: 
+observe_traces[_obj_id] = torch.from_numpy(input_data["objects"][str(_obj_id)]["observe_trace"]).to('mps')
+
+<img width="1425" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/fdbff806-875b-4d50-b1d0-da5b881062a4">
+
+
 
 
 
