@@ -273,6 +273,14 @@ https://github.com/facebookresearch/segment-anything/issues/94
 
 <img width="1008" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/e46b235f-ae43-487b-9a2d-ab06a826c67d">
 
+### 22 replace all .cpu() ==> .to('mps)
+then got the bug
+TypeError: can't convert mps:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
+
+<img width="1426" alt="image" src="https://github.com/iamtongfei/vscode_debug/assets/152712857/cb0c737a-3256-4013-a3d8-6393ce7f9f4c">
+
+底层逻辑是什么呢????
+
 
 
 
