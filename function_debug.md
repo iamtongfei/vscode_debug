@@ -50,6 +50,7 @@ Format of JSON-format input trajectory data
     }
 }
 ```
+2/ PRINT OUT THE ADE: 这句话在loss.py line 104, 所以这里是有一个ADE的值的
 ```
 2024-06-18 13:12:57,800 - root - WARNING - Log 0 3
 ==== debug ====
