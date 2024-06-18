@@ -1,10 +1,12 @@
 ## Normal Test && Samples
 ```
-Log {} {}
+Log {name} {obj_id}
 ```
-is name, obj_id
 
 name == scene id (but we don't know how many scene we have, and whether this obj occured in this scene
+
+#### SO, we have two outcomes
+#### (1) KeyError: '2' , MEANS LOG 0 2 Not Exists
 
 ```
 2024-06-18 13:12:57,703 - root - WARNING - Log 0 2
