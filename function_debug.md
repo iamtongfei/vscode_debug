@@ -24,6 +24,32 @@ KeyError: '2'
 
 ```
 #### (2) 有信息的
+1/ name 对应raw/{name}.json 相当于每一个json都是一个scene 
+所以才有json里面有很多个object
+也对应 ADV README 里面写的
+Format of JSON-format input trajectory data
+```
+{
+    "observe_length": int,
+    "predict_length": int,
+    "time_step": float,
+    "feature_dimension": int, // extra features other than x-y location coordinates
+    "objects": {
+        "string object id": {
+            "type": int,  // 1: small vehicle 2: large vehicle 3: pedestrian 4: unknown
+            "complete": bool, // all time frames are filled
+            "visible": bool, // the last frame of history is filled
+            "observe_trace": [observe_length * 2],
+            "observe_feature": [observe_length * feature_dimension],
+            "observe_mask": [observe_length],
+            "future_trace": [predict_length * 2],
+            "future_feature": [predict_length * feature_dimension],
+            "future_mask": [predict_length],
+            "predict_trace": [predict_length * 2] // Empty before inference
+        }, ...
+    }
+}
+```
 ```
 2024-06-18 13:12:57,800 - root - WARNING - Log 0 3
 ==== debug ====
