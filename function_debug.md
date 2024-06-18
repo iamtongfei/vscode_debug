@@ -24,9 +24,9 @@ KeyError: '2'
 
 ```
 #### (2) 有信息的
-1/ name 对应raw/{name}.json 相当于每一个json都是一个scene 
-所以才有json里面有很多个object
-也对应 ADV README 里面写的
+1/ name 对应raw/{name}.json 相当于每一个json都是一个scene <br>
+所以才有json里面有很多个object<br>
+也对应 ADV README 里面写的<br>
 Format of JSON-format input trajectory data
 ```
 {
