@@ -1,4 +1,10 @@
 ## Normal Test && Samples
+```
+Log {} {}
+```
+is name, obj_id
+
+name == scene id (but we don't know how many scene we have, and whether this obj occured in this scene
 
 ```
 2024-06-18 13:12:57,703 - root - WARNING - Log 0 2
