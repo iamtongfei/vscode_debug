@@ -22,6 +22,17 @@ debug+++ what is f?????
     result["output_data"][str(k)]["objects"][str(obj_id)][trace_name].astype(np.float32)
 KeyError: '2'
 
+```
+#### (2) 有信息的
+2024-06-18 13:12:57,800 - root - WARNING - Log 0 3
+==== debug ====
+/Users/tongfeiguo/Downloads/adversarial_cav-master/test/data/dataset/apolloscape/multi_frame/raw/0.json
+debug+++ what is f?????
+<_io.TextIOWrapper name='/Users/tongfeiguo/Downloads/adversarial_cav-master/test/data/dataset/apolloscape/multi_frame/raw/0.json' mode='r' encoding='UTF-8'>
+PRINT OUT THE ADE: 
+[tensor(1.4550, device='mps:0')]
+
+```
 2024-06-18 13:12:57,800 - root - WARNING - Log 0 3
 ==== debug ====
 /Users/tongfeiguo/Downloads/adversarial_cav-master/test/data/dataset/apolloscape/multi_frame/raw/0.json
