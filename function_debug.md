@@ -104,7 +104,7 @@ NotImplementedError
 
 
 ADE => p.d.f. => log likehood
-```
+
 Yes, calculating the log-likelihood of the Average Displacement Error (ADE) involves understanding the probability density of the ADE. Here’s how you can approach it:
 
 ### Key Steps to Calculate Log-Likelihood of ADE
@@ -184,4 +184,3 @@ To calculate the log-likelihood of the ADE:
 This approach provides a probabilistic interpretation of ADE and can be used to assess the likelihood of the observed average prediction error under the model's assumptions.
 
 Do you have any specific details or additional constraints you want to include in this model?
-```
