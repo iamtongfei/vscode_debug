@@ -101,3 +101,87 @@ PRINT OUT THE ADE:
     raise NotImplementedError()
 NotImplementedError
 ```
+
+
+ADE => p.d.f. => log likehood
+```
+Yes, calculating the log-likelihood of the Average Displacement Error (ADE) involves understanding the probability density of the ADE. Here’s how you can approach it:
+
+### Key Steps to Calculate Log-Likelihood of ADE
+
+1. **Understand ADE**:
+   - ADE measures the average L2 distance between the true and predicted trajectory points:
+     \[
+     \text{ADE} = \frac{1}{T} \sum_{t=1}^T \|\mathbf{y}_t - \mathbf{\mu}_t\|
+     \]
+
+2. **Model ADE's Distribution**:
+   - To compute the log-likelihood, you need a probabilistic model of the ADE.
+   - A common assumption is that the individual displacement errors \( \|\mathbf{y}_t - \mathbf{\mu}_t\| \) are Gaussian, leading to a distribution for ADE. If the errors \( \|\mathbf{y}_t - \mathbf{\mu}_t\| \) follow a Gaussian distribution, their average (ADE) will also follow a Gaussian distribution due to the Central Limit Theorem.
+
+3. **Probability Density of ADE**:
+   - If the displacement errors are normally distributed with variance \( \sigma^2 \), the ADE over \( T \) time steps will have a mean related to the true average error and a variance \( \frac{\sigma^2}{T} \):
+     \[
+     \text{ADE} \sim \mathcal{N}\left(\text{Expected ADE}, \frac{\sigma^2}{T}\right)
+     \]
+   - The probability density function (PDF) of a Gaussian random variable \( x \) is:
+     \[
+     f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)
+     \]
+
+4. **Log-Likelihood Calculation**:
+   - Using the PDF, the log-likelihood of the ADE is:
+     \[
+     \log \mathcal{L}(\text{ADE}) = \log f(\text{ADE}) = -\frac{1}{2} \left( \log(2 \pi \sigma^2) + \frac{(\text{ADE} - \mu)^2}{\sigma^2} \right)
+     \]
+     where \( \mu \) is the expected ADE, and \( \sigma^2 \) is the variance of the ADE.
+
+### Example in Python
+
+Assuming that the displacement errors follow a Gaussian distribution:
+
+```python
+import numpy as np
+
+def compute_ade(true_trajectory, predicted_means):
+    errors = np.linalg.norm(np.array(true_trajectory) - np.array(predicted_means), axis=1)
+    ade = np.mean(errors)
+    return ade
+
+def log_likelihood_of_ade(ade, mu, sigma_squared, T):
+    # Log-likelihood assuming ADE follows N(mu, sigma^2 / T)
+    sigma_squared_ade = sigma_squared / T
+    log_likelihood = -0.5 * (np.log(2 * np.pi * sigma_squared_ade) + (ade - mu)**2 / sigma_squared_ade)
+    return log_likelihood
+
+# Example usage
+true_trajectory = [np.array([1, 2]), np.array([2, 3]), np.array([3, 4])]
+predicted_means = [np.array([1.1, 2.1]), np.array([2.1, 3.1]), np.array([3.1, 4.1])]
+expected_ade = 0.1  # Expected ADE, can be derived from training data or assumptions
+sigma_squared = 0.05  # Example variance
+T = len(true_trajectory)
+
+ade = compute_ade(true_trajectory, predicted_means)
+log_likelihood_ade = log_likelihood_of_ade(ade, expected_ade, sigma_squared, T)
+
+print(f"ADE: {ade}")
+print(f"Log-Likelihood of ADE: {log_likelihood_ade}")
+```
+
+### Key Points:
+
+- **Distribution Assumption**: The calculation assumes that the ADE follows a Gaussian distribution due to the underlying errors being Gaussian.
+- **Expected ADE**: The expected value of ADE (\( \mu \)) and its variance \( \sigma^2 \) must be known or estimated from data.
+- **Log-Likelihood**: Uses the Gaussian PDF to compute the log-likelihood for the observed ADE.
+
+### Summary:
+
+To calculate the log-likelihood of the ADE:
+1. **Estimate or assume** the distribution of ADE based on the error distribution.
+2. **Calculate the PDF** of ADE using the Gaussian distribution.
+3. **Compute the log-likelihood** using the PDF.
+
+This approach provides a probabilistic interpretation of ADE and can be used to assess the likelihood of the observed average prediction error under the model's assumptions.
+
+Do you have any specific details or additional constraints you want to include in this model?
+```
