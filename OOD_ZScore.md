@@ -63,3 +63,51 @@ plt.show()
 - **Threshold**: Fine-tune the Z-score threshold to balance sensitivity and false positives.
 
 Feel free to modify the code to fit your specific requirements and data characteristics.
+
+
+
+Using Z-scores for change point detection leverages the statistical properties of the normal distribution to identify outliers and shifts in data. Here's a brief mathematical explanation and some literature references to support this approach.
+
+### Mathematical Explanation
+
+1. **Moving Average and Standard Deviation**:
+   - The moving average (\(\mu_t\)) and standard deviation (\(\sigma_t\)) are computed over a sliding window of size \(w\):
+     \[
+     \mu_t = \frac{1}{w} \sum_{i=t-w+1}^{t} x_i
+     \]
+     \[
+     \sigma_t = \sqrt{\frac{1}{w} \sum_{i=t-w+1}^{t} (x_i - \mu_t)^2}
+     \]
+
+2. **Z-Score Calculation**:
+   - The Z-score for each data point \(x_t\) is calculated as:
+     \[
+     z_t = \frac{x_t - \mu_t}{\sigma_t}
+     \]
+   - This represents how many standard deviations the data point \(x_t\) is from the moving average \(\mu_t\).
+
+3. **Thresholding**:
+   - A threshold is set (commonly 2 or 3). Data points where the absolute value of the Z-score exceeds this threshold are flagged as potential change points:
+     \[
+     \text{change\_points} = \{ t \mid |z_t| > \text{threshold} \}
+     \]
+
+### Literature Review
+
+1. **Box, G. E. P., & Jenkins, G. M. (1976). Time Series Analysis: Forecasting and Control**:
+   - This book introduces methods for analyzing time series data, including moving averages and standard deviations, which are fundamental to the Z-score method.
+
+2. **Page, E. S. (1954). Continuous Inspection Schemes. Biometrika, 41(1/2), 100-115**:
+   - Introduces the Cumulative Sum (CUSUM) control chart, which is a sequential analysis technique for monitoring change detection. Z-score-based methods share a similar objective.
+
+3. **Montgomery, D. C. (2009). Introduction to Statistical Quality Control**:
+   - Discusses various control chart methods, including Shewhart control charts, which use standard deviations to detect outliers in process control.
+
+4. **Shumway, R. H., & Stoffer, D. S. (2017). Time Series Analysis and Its Applications**:
+   - Provides comprehensive coverage of time series analysis techniques, including those based on moving averages and standard deviations.
+
+5. **Hawkins, D. M., Qiu, P., & Kang, C. W. (2003). The Changepoint Model for Statistical Process Control. Journal of Quality Technology, 35(4), 355-366**:
+   - Explores models specifically designed for detecting change points in data streams.
+
+### Summary
+The use of Z-scores for change point detection is supported by a well-established statistical foundation. By leveraging the properties of the normal distribution and the concept of standard deviations, Z-scores can effectively highlight deviations and shifts in time series data. This method is both intuitive and practical, making it a popular choice in various fields including quality control, financial analysis, and anomaly detection.
