@@ -62,35 +62,33 @@ plt.show()
 - **Window Size**: Adjust the window size based on the expected scale of the changes.
 - **Threshold**: Fine-tune the Z-score threshold to balance sensitivity and false positives.
 
-Feel free to modify the code to fit your specific requirements and data characteristics.
 
 
-
-Using Z-scores for change point detection leverages the statistical properties of the normal distribution to identify outliers and shifts in data. Here's a brief mathematical explanation and some literature references to support this approach.
+Sure, here's the mathematical explanation formatted for GitHub Markdown:
 
 ### Mathematical Explanation
 
 1. **Moving Average and Standard Deviation**:
    - The moving average (\(\mu_t\)) and standard deviation (\(\sigma_t\)) are computed over a sliding window of size \(w\):
-     \[
+     ```math
      \mu_t = \frac{1}{w} \sum_{i=t-w+1}^{t} x_i
-     \]
-     \[
+     ```
+     ```math
      \sigma_t = \sqrt{\frac{1}{w} \sum_{i=t-w+1}^{t} (x_i - \mu_t)^2}
-     \]
+     ```
 
 2. **Z-Score Calculation**:
    - The Z-score for each data point \(x_t\) is calculated as:
-     \[
+     ```math
      z_t = \frac{x_t - \mu_t}{\sigma_t}
-     \]
+     ```
    - This represents how many standard deviations the data point \(x_t\) is from the moving average \(\mu_t\).
 
 3. **Thresholding**:
    - A threshold is set (commonly 2 or 3). Data points where the absolute value of the Z-score exceeds this threshold are flagged as potential change points:
-     \[
+     ```math
      \text{change\_points} = \{ t \mid |z_t| > \text{threshold} \}
-     \]
+     ```
 
 ### Literature Review
 
