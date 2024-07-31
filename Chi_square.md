@@ -1,8 +1,10 @@
+# Understanding Chi-square Test and Significance Levels
+
 In a Chi-square test, the critical value is used to determine whether the observed data significantly deviates from the expected data under the null hypothesis. It acts as a threshold to decide whether to reject the null hypothesis.
 
 The significance level (\(\alpha\)) in a Chi-square test is the probability of rejecting the null hypothesis when it is actually true (Type I error). It sets the threshold for determining whether the observed differences between expected and observed frequencies are statistically significant.
 
-### Key Points about Significance Level:
+## Key Points about Significance Level:
 
 1. **Threshold for Decision Making:**
    - The significance level establishes a critical value from the Chi-square distribution. If the Chi-square statistic exceeds this critical value, the null hypothesis is rejected.
@@ -15,7 +17,7 @@ The significance level (\(\alpha\)) in a Chi-square test is the probability of r
 3. **Choosing the Significance Level:**
    - The choice of \(\alpha\) depends on the context and consequences of making a Type I error. For example, in critical medical research, a lower significance level (e.g., 0.01) may be chosen to minimize the risk of false positives.
 
-### Steps in a Chi-square Test:
+## Steps in a Chi-square Test:
 
 1. **Formulate Hypotheses:**
    - **Null Hypothesis (H0):** Assumes no significant difference between the observed and expected frequencies.
@@ -42,32 +44,32 @@ The significance level (\(\alpha\)) in a Chi-square test is the probability of r
    - If the calculated Chi-square statistic is greater than the critical value, reject the null hypothesis.
    - If the Chi-square statistic is less than or equal to the critical value, fail to reject the null hypothesis.
 
-### Example:
+## Example:
 
 Let's say you have observed and expected frequencies for a Chi-square test:
 
 - **Observed Frequencies:** \(O = [10, 20, 30]\)
 - **Expected Frequencies:** \(E = [15, 15, 30]\)
 
-#### Step 1: Calculate the Chi-square Statistic
+### Step 1: Calculate the Chi-square Statistic
 \[
 \chi^2 = \frac{(10 - 15)^2}{15} + \frac{(20 - 15)^2}{15} + \frac{(30 - 30)^2}{30} = \frac{25}{15} + \frac{25}{15} + \frac{0}{30} = \frac{50}{15} = 3.33
 \]
 
-#### Step 2: Determine Degrees of Freedom
+### Step 2: Determine Degrees of Freedom
 - \(df = 3 - 1 = 2\)
 
-#### Step 3: Select Significance Level
+### Step 3: Select Significance Level
 - \(\alpha = 0.05\)
 
-#### Step 4: Find the Critical Value
+### Step 4: Find the Critical Value
 Using a Chi-square distribution table or the `chi2.ppf` function in Python, you find the critical value for \(\alpha = 0.05\) and \(df = 2\) is approximately 5.991.
 
-#### Step 5: Compare Chi-square Statistic with Critical Value
+### Step 5: Compare Chi-square Statistic with Critical Value
 - Calculated Chi-square statistic: 3.33
 - Critical value at \(\alpha = 0.05\) and \(df = 2\): 5.991
 
 Since 3.33 < 5.991, you fail to reject the null hypothesis.
 
-### Conclusion:
+## Conclusion:
 The critical value serves as a threshold in the Chi-square test. If the Chi-square statistic exceeds this value, it suggests that the observed data is significantly different from the expected data, leading to the rejection of the null hypothesis. If the Chi-square statistic is less than or equal to the critical value, it suggests that there is not enough evidence to reject the null hypothesis.
