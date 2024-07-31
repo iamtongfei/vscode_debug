@@ -1,5 +1,20 @@
 In a Chi-square test, the critical value is used to determine whether the observed data significantly deviates from the expected data under the null hypothesis. It acts as a threshold to decide whether to reject the null hypothesis.
 
+The significance level (\(\alpha\)) in a Chi-square test is the probability of rejecting the null hypothesis when it is actually true (Type I error). It sets the threshold for determining whether the observed differences between expected and observed frequencies are statistically significant.
+
+### Key Points about Significance Level:
+
+1. **Threshold for Decision Making:**
+   - The significance level establishes a critical value from the Chi-square distribution. If the Chi-square statistic exceeds this critical value, the null hypothesis is rejected.
+
+2. **Common Significance Levels:**
+   - **0.05 (5%):** This is the most commonly used significance level, implying a 5% risk of concluding that a difference exists when there is no actual difference.
+   - **0.01 (1%):** This implies a stricter criterion with a 1% risk of a Type I error.
+   - **0.10 (10%):** This is a more lenient criterion with a 10% risk of a Type I error.
+
+3. **Choosing the Significance Level:**
+   - The choice of \(\alpha\) depends on the context and consequences of making a Type I error. For example, in critical medical research, a lower significance level (e.g., 0.01) may be chosen to minimize the risk of false positives.
+
 ### Steps in a Chi-square Test:
 
 1. **Formulate Hypotheses:**
