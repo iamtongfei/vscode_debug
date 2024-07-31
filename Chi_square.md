@@ -1,6 +1,4 @@
-Sure, here's the content with the math formulas changed to Markdown format:
 
-```markdown
 # Understanding Chi-square Test and Significance Levels
 
 In a Chi-square test, the critical value is used to determine whether the observed data significantly deviates from the expected data under the null hypothesis. It acts as a threshold to decide whether to reject the null hypothesis.
