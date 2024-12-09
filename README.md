@@ -308,7 +308,11 @@ modify after:
 
 
 ### 23 查看所有package的现有版本 version
+```
 conda list
+```
+for examole, this is the screenshot of parts of results of the conda list:
+<img width="533" alt="image" src="https://github.com/user-attachments/assets/f2b241a9-d0d5-4063-9829-e4abc6c17696">
 
 
 
