@@ -307,6 +307,10 @@ modify after:
 
 
 
+### 23 查看所有package的现有版本 version
+conda list
+
+
 
 
 
